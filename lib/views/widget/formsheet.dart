@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:notepad/cubit/cubit/add_note_cubit.dart';
+import '../../cubit/addNote/add_note_cubit.dart';
 import 'customTextFiled.dart';
 import '../../models/note_model.dart';
 import 'custombutton.dart';
@@ -35,7 +35,7 @@ class _FormSheetState extends State<FormSheet> {
             },
             text: 'title',
           ),
-          SizedBox(
+        const  SizedBox(
             height: 16,
           ),
           textFiled(
@@ -48,11 +48,11 @@ class _FormSheetState extends State<FormSheet> {
             text: 'content',
             maxheight: 5,
           ),
-          SizedBox(
+        const  SizedBox(
             height: 25,
           ),
-          listcolor(),
-          SizedBox(
+        const  listcolor(),
+        const  SizedBox(
             height: 25,
           ),
           customButton(
@@ -72,6 +72,7 @@ class _FormSheetState extends State<FormSheet> {
               }
             },
           )
+          ,SizedBox(height: 20,)
         ],
       ),
     );

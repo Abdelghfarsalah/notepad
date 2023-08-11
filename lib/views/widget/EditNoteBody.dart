@@ -3,7 +3,7 @@ import 'package:notepad/models/note_model.dart';
 import 'package:notepad/views/widget/customappbar.dart';
 import 'package:notepad/views/widget/noteitem.dart';
 import 'customTextFiled.dart';
-import '../../cubit/cubit/add_note_cubit.dart';
+import '../../cubit/addNote/add_note_cubit.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../cubit/getnote/get_all_note_cubit.dart';
 class editnoteviwebody extends StatefulWidget {

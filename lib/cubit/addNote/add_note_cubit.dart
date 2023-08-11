@@ -20,3 +20,4 @@ class AddNoteCubit extends Cubit<AddNoteState> {
     }
   }
 }
+

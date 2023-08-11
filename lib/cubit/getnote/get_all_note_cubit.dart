@@ -9,21 +9,7 @@ class GetAllNoteCubit extends Cubit<GetAllNoteState> {
   List<NoteModel>? notes;
   fetchAllNotes() {
     var notesBox = Hive.box<NoteModel>('Box_note');
-
     notes = notesBox.values.toList();
     emit(GetAllNotesuccess());
   }
 }
-/*import 'package:bloc/bloc.dart';
-
-class NotesCubit extends Cubit<NotesState> {
-  NotesCubit() : super(NotesInitial());
-
-  List<NoteModel>? notes;
-  fetchAllNotes() {
-    var notesBox = Hive.box<NoteModel>(kNotesBox);
-
-    notes = notesBox.values.toList();
-    emit(NotesSuccess());
-  }
-} */

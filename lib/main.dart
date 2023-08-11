@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:hive_flutter/adapters.dart';
 import 'package:notepad/models/note_model.dart';
 import 'package:notepad/views/note-view.dart';
-import 'cubit/cubit/add_note_cubit.dart';
+import 'cubit/addNote/add_note_cubit.dart';
 import 'cubit/getnote/get_all_note_cubit.dart';
 
 void main() async {
